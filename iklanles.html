@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fadilah Code & Art</title>
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #f0f8ff;
+            text-align: center;
+        }
+        h1 {
+            color: #0d47a1;
+        }
+        .box {
+            background-color: white;
+            padding: 15px;
+            margin: 10px;
+            border-radius: 10px;
+            display: inline-block;
+            width: 250px;
+        }
+        button {
+            padding: 10px;
+            background-color: #1976d2;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0d47a1;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Fadilah Code & Art 🎨💻</h1>
+    <p>Les coding & seni kreatif untuk pemula</p>
+
+    <div class="box">
+        <h3>Paket Mandiri</h3>
+        <p>Rp50.000 / per pertemuan</p>
+    </div>
+
+    <div class="box">
+        <h3>Paket Bulanan</h3>
+        <p>Rp180.000 / 4x pertemuan</p>
+    </div>
+
+    <br><br>
+
+    <button onclick="tampilPesan()">Cara Pesan</button>
+
+    <h3>Pilih Hari:</h3>
+    <select id="hari">
+        <option>Senin</option>
+        <option>Selasa</option>
+        <option>Rabu</option>
+        <option>Kamis</option>
+        <option>Jumat</option>
+    </select>
+
+    <h3>Pilih Waktu:</h3>
+    <select id="waktu">
+        <option>16.00</option>
+        <option>17.00</option>
+        <option>19.00</option>
+    </select>
+
+    <br><br>
+    <button onclick="pesan()">Pesan Sekarang</button>
+
+    <script>
+        function tampilPesan() {
+            alert("Silakan pilih hari dan waktu, lalu klik 'Pesan Sekarang'");
+        }
+
+        function pesan() {
+            var hari = document.getElementById("hari").value;
+            var waktu = document.getElementById("waktu").value;
+
+            alert("Pesanan kamu:\nHari: " + hari + "\nWaktu: " + waktu);
+        }
+    </script>
+
+</body>
+</html>
